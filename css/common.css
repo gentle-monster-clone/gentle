@@ -1,0 +1,180 @@
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+}
+
+header { 
+    position: relative;
+    height: 115px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .popUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 43px;
+    background-color: white;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+header .popUp .sliderBox ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 30px;
+}
+header .popUp .sliderBox ul li { width: 34.375rem; text-align: center }
+header .popUp .sliderBox ul li a {
+    text-decoration: underline;
+    letter-spacing: -1.1px;
+    font-size: 0.813rem;
+}
+
+/* 슬라이드 이벤트 대비 */
+header .popUp .sliderBox ul li:nth-child(2) {
+display: none;
+}
+header .popUp .icon {
+    position: absolute;
+    right: 1rem;
+    width: 40px;
+    height: 100%;
+    font-size: 0;
+}
+header .popUp .icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 1px;
+    background: #222;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: 0% 0%;
+}
+header .popUp .icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 1px;
+    background: #222;
+    transform: rotate(130deg) translate(-50%, -50%);
+    transform-origin: 0% 0%;
+}
+header nav.sticky {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    height: calc(100% - 43px);
+    padding: 0 1rem;
+}
+header nav.sticky .logo { width: 22rem }
+header nav.sticky .logo a img {
+    width: 12.5rem;
+    height: 2rem;
+}
+header nav.sticky .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+}
+header nav.sticky .menu li { width: 20rem; text-align: center }
+header nav.sticky .menu li:nth-child(2) { width: 15rem }
+header nav.sticky .menu li a{ 
+    font-size: 0.813rem;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+}
+header nav.sticky .selfInfoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23rem;
+    height: 2.75rem;
+}
+header nav.sticky .selfInfoBox .serch input {
+    width: 10.188rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border-radius: 30px;
+    border: 1px solid #343434;
+    background-color: transparent;
+}
+header nav.sticky .selfInfoBox .serch input:focus{ outline: none }
+header nav.sticky .selfInfoBox .serch input::placeholder { color: #ccc }
+header nav.sticky .selfInfoBox .selfBox { display: flex }
+header nav.sticky .selfInfoBox .selfBox .self button { letter-spacing: -1.1px; font-weight: bold }
+header nav.sticky .selfInfoBox .selfBox .self button span { font-size: 0.3rem }
+header nav.sticky .selfInfoBox .selfBox .self:last-child button { display: flex }
+header nav.sticky .selfInfoBox .selfBox .self:last-child button img { width: 1.2rem }
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    font-size: 0.813rem;
+    background-color: #f7f7f7;
+}
+footer .footerInfoLayer { display: flex }
+footer .footerInfoLayer > ul { width: 300px }
+footer .footerInfoLayer > ul > li span{
+    display: inline-block;
+    height: 2.125rem;
+    font-weight: bold;
+    color: #343434;
+    letter-spacing: -1px;
+}
+footer .footerInfoLayer>ul>li>ul>li { height: 1.563rem }
+footer .footerInfoLayer>ul>li>ul>li>a{ color: #858585; font-weight: bold; letter-spacing: -1px }
+
+footer .copyRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 110px;
+}
+footer .copyRight >span {
+    display: block;
+    min-width: 300px;
+    max-width: 300px;
+    font-size: 0.938rem;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    cursor: default;
+}
+
+footer .copyRight .infoBox a { text-decoration: underline }
+footer .copyRight .infoBox span {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.2rem;
+    font-size: 0.688rem;
+    cursor: default;
+}
+footer .copyRight .infoBox span:first-child { padding-left: 0 }
+footer .copyRight .infoBox span::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    width: 0;
+    font-size: 6px;
+}
+footer .copyRight .infoBox span:nth-child(8) { padding-right: 0 }
+footer .copyRight .infoBox span:nth-child(8)::after { display: none }
+footer .copyRight .infoBox p {
+    padding-top: 0.3rem;
+    font-size: 0.688rem;
+    cursor: default;
+}
