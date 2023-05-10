@@ -1,0 +1,471 @@
+@media screen and (min-width: 1200px) {
+    #wrap {
+        width: 100%;
+        overflow-x: hidden;
+        margin-bottom: 150px;
+    }
+
+    .category {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        margin-top: -30px;
+    }
+
+    .slides {
+        display: flex;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .slides-box {
+        width: 59.3%;
+        overflow: hidden;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.73rem;
+        cursor: pointer;
+        margin-right: 25px;
+    }
+
+    .center>img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+    }
+
+    .center>img:hover {
+        outline: 1.3px solid black;
+        outline-offset: 3px;
+        transition: .2s;
+    }
+
+    button>img {
+        width: 100%;
+    }
+
+    .category_prev {
+        margin-right: 20px;
+        width: 35px;
+    }
+
+    .category_next {
+        margin-left: 20px;
+        width: 35px;
+    }
+
+    span {
+        padding: 30px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: rgb(55, 55, 55);
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        padding: 30px;
+    }
+
+    .container-left {
+        width: 60%;
+        height: 100%;
+    }
+
+    .container-left video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container-right {
+        width: 40%;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: rgb(55, 55, 55);
+    }
+
+    .container-right>p {
+        line-height: 1.5rem;
+        margin: 30px 50px;
+        font-size: 0.9rem;
+    }
+
+    .product {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .pro {
+        margin: 50px 8px;
+        width: calc((96% - 60px) / 5);
+    }
+
+    .pro>img {
+        width: 100%;
+        max-height: 100%;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .pro_title {
+        font-weight: bold;
+        color: rgb(55, 55, 55);
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .price {
+        font-size: 0.8rem;
+        color: rgb(76, 76, 76);
+        cursor: pointer;
+    }
+
+    .like {
+        width: 30px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        float: right;
+        margin: -40px 0px;
+    }
+
+    .like>img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #wrap {
+        width: 100%;
+        overflow-x: hidden;
+        margin-bottom: 150px;
+    }
+
+    .category {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        margin-top: -30px;
+    }
+
+    .slides {
+        display: flex;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .slides-box {
+        width: 59.3%;
+        overflow: hidden;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.73rem;
+        cursor: pointer;
+        margin-right: 25px;
+    }
+
+    .center>img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+    }
+
+    .center>img:hover {
+        outline: 1.3px solid black;
+        outline-offset: 3px;
+        transition: .2s;
+    }
+
+    button>img {
+        width: 100%;
+    }
+
+    .category_prev {
+        margin-right: 20px;
+        width: 35px;
+    }
+
+    .category_next {
+        margin-left: 20px;
+        width: 35px;
+    }
+
+    span {
+        padding: 30px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: rgb(55, 55, 55);
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        padding: 30px;
+    }
+
+    .container-left {
+        width: 60%;
+        height: 100%;
+    }
+
+    .container-left video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container-right {
+        width: 40%;
+        text-align: center;
+        margin: 30px;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: rgb(55, 55, 55);
+    }
+
+    .container-right>p {
+        line-height: 1.5rem;
+        margin: 30px 50px;
+        font-size: 0.9rem;
+    }
+
+    .product {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .pro {
+        margin: 50px 8px;
+        width: calc((96% - 60px) / 4);
+    }
+
+    .pro>img {
+        width: 100%;
+        max-height: 100%;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .pro_title {
+        font-weight: bold;
+        color: rgb(55, 55, 55);
+        font-size: 0.9rem;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+
+    .price {
+        font-size: 0.8rem;
+        color: rgb(76, 76, 76);
+        cursor: pointer;
+    }
+
+    .like {
+        width: 30px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        float: right;
+        margin: -35px 0px;
+    }
+
+    .like>img {
+        width: 100%;
+    }
+
+    .last {
+        margin-bottom: 160px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #wrap {
+        width: 100%;
+        overflow-x: hidden;
+        margin-bottom: 150px;
+    }
+
+    .category {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        margin-top: -30px;
+    }
+
+    .slides {
+        display: flex;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .slides-box {
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.73rem;
+        cursor: pointer;
+        margin-right: 25px;
+    }
+
+    .center>img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+    }
+
+    .center>img:hover {
+        outline: 1.3px solid black;
+        outline-offset: 3px;
+        transition: .2s;
+    }
+
+    button>img {
+        width: 100%;
+    }
+
+    .category_prev {
+        margin-right: 20px;
+        width: 35px;
+    }
+
+    .category_next {
+        margin-left: 20px;
+        width: 35px;
+    }
+
+    span {
+        padding: 30px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: rgb(55, 55, 55);
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        padding: 30px;
+    }
+
+    .container-left {
+        width: 60%;
+        height: 100%;
+    }
+
+    .container-left video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container-right {
+        width: 40%;
+        text-align: center;
+        margin: 0px 30px;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: rgb(55, 55, 55);
+    }
+
+    .container-right>p {
+        line-height: 1.5rem;
+        margin: 20px 20px;
+        font-size: 0.9rem;
+    }
+
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pro {
+        width: 44%;
+        margin: 50px 5px;
+    }
+
+    .pro>img {
+        width: 100%;
+        max-height: 100%;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .pro_title {
+        font-weight: bold;
+        color: rgb(55, 55, 55);
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .price {
+        font-size: 0.8rem;
+        color: rgb(76, 76, 76);
+        cursor: pointer;
+    }
+
+    .like {
+        width: 25px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        float: right;
+        margin: -35px 0px;
+    }
+
+    .like>img {
+        width: 100%;
+    }
+
+    .last {
+        margin-bottom: 160px;
+    }
+}
