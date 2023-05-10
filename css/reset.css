@@ -84,6 +84,7 @@ time,
 mark,
 audio,
 video {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
@@ -132,4 +133,19 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li,
+a {
+    direction: none;
+    text-decoration: none;
+    color: #222;
+    list-style: none;
 }
