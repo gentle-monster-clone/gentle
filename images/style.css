@@ -1,0 +1,193 @@
+.brand {
+    margin: 30px 9px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+.brand-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border:1px solid #ffffff; 
+    padding: 3px;
+    
+    
+    
+}
+
+.brand-text {
+    text-align: center;
+    word-break: keep-all;
+    position: relative;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #343434;
+}
+
+.flex {
+    height: 170px;
+    display: flex;
+    margin: 30px 10px;
+   
+}
+
+.brand-img:hover {
+    outline: 1px solid black;
+    padding: 3px;
+    animation: opacity 1s ease;
+    
+    
+}
+
+@keyframes opacity {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+    
+}
+
+#back {
+    position: absolute;
+}
+
+.title {
+    display: flex;
+    position: relative;
+    color: #343434;
+}
+
+.title-left {
+    margin-left: 22px;
+    font-size: 16.5px;
+    font-weight: 550;
+    /* letter-spacing: -0.5px; */
+}
+
+.title-right {
+    font-size: 13px;
+    display: flex;
+    margin-left: 68%;
+}
+
+.body {
+    overflow-x: hidden; 
+}
+
+.main {
+    display: flex;
+}
+
+.main-img {
+    margin: 40px 22px;
+    width: 58.5%;
+    height: 58.5%;
+    padding-right: 20px;
+}
+
+
+.main-text {
+    width: 33%;
+    word-break: keep-all;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 13%;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-direction: column;
+    color: #343434;
+}
+
+.text-big {
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* .sell { */
+    /* width: calc((96%-60px)/5);
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-wrap: wrap; */
+    /* margin-left: 22px;
+    display: flex;
+	flex-wrap: wrap;
+    
+}
+
+.sell-img {
+    
+    width: 200px;
+}
+
+.sell-text {
+    margin-top:  20px;
+    color: #343434;
+    font-size: 13px;
+}
+
+.sell-text1 {
+    display: flex;
+}
+
+.sell-text2 {
+    font-weight: 700;
+    margin-right: 10%;
+}
+
+.sell-text3 {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 17.5%;   
+}
+
+.sell-text4 {
+    margin-top: 8px;
+    font-weight:30px;
+}
+
+.sell-text5 {
+    margin-top: 18px;
+    font-size: 11px;
+
+} */
+@media (min-width: 1200px) {
+	.sell-img {
+        width: 19%;
+    }
+}
+@media (max-width: 1200px) {
+	.sell-img {
+        width: 23%;
+    }
+		
+}
+
+/* flexbox 
+화면이 작아지면 container의 각 항목들이 아래로 내려가 배치된다.
+*/
+
+#container {
+	display: flex;
+	flex-wrap: wrap;
+    margin-left:  22px;
+}
+
+#container > div {
+	background-color: springgreen;
+	margin: 20px;
+	padding: 20px;
+	width: 200px;
+}
+
+.sell-img {
+    /* width: 270px; */
+    margin-right: 10px;
+    margin-top: 20px;
+}
