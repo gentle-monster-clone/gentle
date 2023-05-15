@@ -1,0 +1,1288 @@
+@media (min-width: 1200px) {
+    .brand {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: column;
+        position: relative;
+        padding: 0 10px;
+        right: 0;
+    }
+    
+    .brand-img {
+        width: 76px;        
+        border-radius: 50%;
+        border:1px solid #ffffff; 
+        padding: 2px;
+        cursor: pointer;
+        
+            
+    }
+    
+    .brand-text {
+        text-align: center;
+        word-break: keep-all;
+        position: relative;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #343434;
+    }
+    
+    .flex {
+        width: 864px;
+        margin: 30px auto;
+        position: relative;
+        /* height: 170px; */
+        display: flex;
+        padding: 16px 0;
+        /* justify-content: center; */
+        overflow: hidden;
+        top: 20px;
+        
+       
+    }
+
+    .brand-carousel {
+        bottom: 108.5px;
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+        
+    }
+
+
+    .prev-button {
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1;
+
+    }
+
+    .brand-prev {
+        width: 25px;
+        height: 25px;        
+        position: absolute;
+        left: 2.5px;
+        top: 2.5px;
+        z-index: -1;
+        
+    }
+
+    .brand-next {
+        width: 25px;
+        height: 25px;        
+        position: absolute;
+        left: 932.5px;
+        top: 2.5px;
+        transform: scaleX(-1);
+        z-index: -1;
+        
+    }
+
+    .next-button {
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        float: right;
+        cursor: pointer;
+        z-index: 1;
+        
+
+    }
+
+    
+    #back {
+        position: absolute;
+        outline: 1px solid black;
+        opacity: 0%;
+        transition: opacity 0.5s;
+        z-index: 2;
+    }
+
+    #back1 {
+        position: absolute;
+        outline: 1px solid black;
+        opacity: 1;
+        transition: opacity 0.5s;
+        z-index: 2;
+    }
+    
+    #back:hover {
+        opacity: 1;
+    }    
+    
+    .title {
+        display: flex;
+        position: relative;
+        color: #343434;
+        padding:0 22px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .title-left {
+        
+        font-size: 16.5px;
+        font-weight: 550;
+        /* letter-spacing: -0.5px; */
+    }
+    
+    
+    .title-right {
+        text-align: right;
+        display: flex;
+        font-size: 13px;
+        margin-left: auto;
+
+        
+    }
+    
+    .body {
+        overflow-x: hidden; 
+    }
+    
+    .main {
+        display: flex;
+    }
+    
+    .main-img {
+        margin: 40px 22px;
+        width: 58.5%;
+        height: 58.5%;
+        padding-right: 20px;
+    }
+    
+    .big-main {
+        width: 0%;
+
+    }
+    
+    .main-text {
+        width: 33%;
+        word-break: keep-all;
+        line-height: 20px;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 13%;
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: column;
+        color: #343434;
+    }
+    
+    .text-big {
+        font-size: 25px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    
+    /* .sell {
+        width: calc((96%-60px)/5);
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    } */
+    
+    .model {
+        opacity: 0;
+    }
+    
+    
+    .sell-text {
+        margin-top: 20px;
+        color: #343434;
+        font-size: 13px;
+    }
+    
+    .sell-text1 {
+        display: flex;
+    }
+    
+    .sell-text2 {
+        font-weight: 700;
+        margin-right: 5%;
+    }
+    
+    .sell-text3 {
+        font-size: 20px;
+        float: right;
+        margin: -15px 5px;
+        cursor: pointer;
+    }
+
+    .sell-text3:hover {
+        content: "♥";
+        color: red;
+        font-size:0px;
+    }
+
+    .sell-text3:hover::after {
+        content: "♥";
+        color: red;
+        font-size:20px;
+    }
+
+
+    .sell-text3.clicked {
+        font-size: 0px;
+      }
+
+    .sell-text3.clicked::after {
+        content: "♥";
+        color: red;
+        font-size:20px;
+      }
+
+    .sell-text4 {
+        margin-top: 8px;
+        font-weight:30px;
+    }
+    
+    .sell-text5 {
+        margin-top: 18px;
+        font-size: 11px;
+    }
+    
+    .sell-text5 span {
+        margin-top: 18px;
+        font-size: 11px;
+        color: rgba(181, 41, 41, 0.78);
+    }
+
+    /* flexbox 
+    화면이 작아지면 container의 각 항목들이 아래로 내려가 배치된다.
+    */
+    
+    .wrap {
+        width: calc((100%-60px)/5);
+        position: relative;
+        padding: 0 6px;
+        transition: width 0.6s ease, margin 0.6s ease;
+        /* left: 44px; */
+        /* margin-right: 10px; */
+    }
+
+    
+    
+    #container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        padding: 0 16px;
+        /* right: 22px; */
+        /* justify-contenst: center;    */
+        margin-bottom: 200px;
+        
+    }
+    
+    .sell-img {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        z-index: 0;
+        
+    }
+    
+    * {
+        box-sizing: border-box;
+      }
+      
+      .carousel-flex {
+        display: flex;
+        
+        /* margin-left: 22px; */
+      }
+    
+      .carousel-wrapper {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        
+      }
+      
+    
+      .c-img {
+        width: 100%;
+        z-index: 0;
+      }
+    
+      .carousel-wrapper > .carousel {
+        display: flex;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.3s ease-out;
+      }
+      
+      .carousel-wrapper > .carousel > img {
+        width: 100%;
+        
+      }
+    
+     .button-left {
+        float: right;
+        
+        z-index: 1;
+        bottom: 50%;
+        margin-left: 10px;
+        
+       
+    }
+
+    .button-right {
+        float: left;
+        
+        z-index: 1;
+        bottom: 50%;
+        margin-left: 10px;
+    }
+
+    .next-img {
+        
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: 55%;
+        right: 13px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .next {
+        position: absolute;
+        bottom: 53%;
+        right: 10px;
+        opacity: 0%;
+        transition: opacity 0.3s ease;
+        
+        width: 30px; 
+        height: 40px; 
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .prev-img{
+        position: absolute;
+        transform: scaleX(-1);
+        width: 20px;
+        height: 20px;
+        left: 13px;
+        bottom: 55%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .prev {
+        position: absolute;
+        bottom: 53%;
+        left: 10px;
+        opacity: 0%;
+        transition: opacity 0.3s ease;
+        width: 30px; 
+        height: 40px;
+        cursor: pointer; 
+        z-index: 2;
+    }
+
+    
+    .image-container {
+        position: relative;
+        max-width: 100%;
+      }
+  
+      .responsive-image {
+        width: 50%;
+        height: auto;
+      }
+  
+      .fixed-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 1s;
+      }
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #transparent-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .brand {
+        /* width: 882px; */
+        /* margin: 0px auto; */
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: column;
+        position: relative;
+        padding: 0 10px;
+        right: 0;
+    }
+    
+    .brand-img {
+        width: 76px;        
+        border-radius: 50%;
+        border:1px solid #ffffff; 
+        padding: 2px;
+        cursor: pointer;
+        
+            
+    }
+    
+    .brand-text {
+        text-align: center;
+        word-break: keep-all;
+        position: relative;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #343434;
+    }
+    
+    .flex {
+        width: 864px;
+        margin: 30px auto;
+        position: relative;
+        /* height: 170px; */
+        display: flex;
+        padding: 16px 0;
+        /* justify-content: center; */
+        overflow: hidden;
+        top: 20px;
+        
+       
+    }
+
+    .brand-carousel {
+        bottom: 108.5px;
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+        
+    }
+
+
+    .prev-button {
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1;
+
+    }
+
+    .brand-prev {
+        width: 25px;
+        height: 25px;        
+        position: absolute;
+        left: 2.5px;
+        top: 2.5px;
+        z-index: -1;
+        
+    }
+
+    .brand-next {
+        width: 25px;
+        height: 25px;        
+        position: absolute;
+        left: 932.5px;
+        top: 2.5px;
+        transform: scaleX(-1);
+        z-index: -1;
+        
+    }
+
+    .next-button {
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        float: right;
+        cursor: pointer;
+        z-index: 1;
+        
+
+    }
+
+    
+    #back {
+        position: absolute;
+        outline: 1px solid black;
+        opacity: 0%;
+        transition: opacity 0.5s;
+        z-index: 2;
+    }
+
+    #back1 {
+        position: absolute;
+        outline: 1px solid black;
+        opacity: 1;
+        transition: opacity 0.5s;
+        z-index: 2;
+    }
+    
+    #back:hover {
+        opacity: 1;
+    }    
+    
+    .title {
+        display: flex;
+        position: relative;
+        color: #343434;
+        padding: 0 22px;
+    }
+    
+    .title-left {
+        font-size: 16.5px;
+        font-weight: 550;
+        /* letter-spacing: -0.5px; */
+    }
+    
+    .title-right {
+        font-size: 13px;
+        display: flex;
+        float: right;
+        margin-left: auto;
+    }
+    
+    .body {
+        
+        overflow-x: hidden; 
+    }
+    
+    .main {
+        display: flex;
+    }
+    
+    .main-img {
+        margin: 40px 22px;
+        width: 58.5%;
+        height: 58.5%;
+        padding-right: 20px;
+    }
+    
+    .big-main {
+        width: 0%;
+
+    }
+    
+    .main-text {
+        width: 33%;
+        word-break: keep-all;
+        line-height: 20px;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 13%;
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: column;
+        color: #343434;
+    }
+    
+    .text-big {
+        font-size: 25px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    
+    /* .sell {
+        width: calc((96%-60px)/5);
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    } */
+    
+    
+    
+    .sell-text {
+        margin-top:  20px;
+        color: #343434;
+        font-size: 13px;
+    }
+    
+    .sell-text1 {
+        display: flex;
+    }
+    
+    .sell-text2 {
+        font-weight: 700;
+        margin-right: 5%;
+    }
+    
+    .sell-text3 {
+        font-size: 20px;
+        float: right;
+        margin: -15px 5px;
+        cursor: pointer;
+    }
+
+    .sell-text3:hover {
+        content: "♥";
+        color: red;
+        font-size:0px;
+    }
+
+    .sell-text3:hover::after {
+        content: "♥";
+        color: red;
+        font-size:20px;
+    }
+
+
+    .sell-text3.clicked {
+        font-size: 0px;
+      }
+
+    .sell-text3.clicked::after {
+        content: "♥";
+        color: red;
+        font-size:20px;
+      }
+    
+    .sell-text4 {
+        margin-top: 8px;
+        font-weight:30px;
+    }
+    
+    .sell-text5 {
+        margin-top: 18px;
+        font-size: 11px;
+    
+    }
+    .sell-text5 span {
+        margin-top: 18px;
+        font-size: 11px;
+        color: rgba(181, 41, 41, 0.78);
+    }
+    
+    /* flexbox 
+    화면이 작아지면 container의 각 항목들이 아래로 내려가 배치된다.
+    */
+    
+    .wrap {
+        width: calc((100%)/4);
+        position: relative;
+        padding: 0 6px;
+        transition: width 0.6s ease, margin 0.6s ease;
+        /* left: 22px; */
+        /* margin-right: 10px; */
+        margin-bottom: 100px;
+    }
+    
+    .model {
+        opacity: 0;
+    }
+    
+    
+    #container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 16px;
+        /* justify-content: center;    */
+        margin-bottom: 200px;
+    } 
+    
+    
+    .sell-img {
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    
+    * {
+        box-sizing: border-box;
+      }
+      
+
+      .carousel-flex {
+        display: flex;
+        margin-left: 22px;
+      }
+    
+      .carousel-wrapper {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+      
+    
+      .c-img {
+        width: 100%;
+        z-index: 0;
+      }
+    
+      .carousel-wrapper > .carousel {
+        display: flex;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.3s ease-out;
+      }
+      
+      .carousel-wrapper > .carousel > img {
+        width: 100%;
+        
+      }
+    
+    .button-left {
+        float: right;
+        
+        z-index: 1;
+        bottom: 50%;
+        margin-left: 10px;
+        
+       
+    }
+
+    .button-right {
+        float: left;
+        
+        z-index: 1;
+        bottom: 50%;
+        margin-left: 10px;
+    }
+
+    .next-img {
+        
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: 55%;
+        right: 13px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .next {
+        position: absolute;
+        bottom: 53%;
+        right: 10px;
+        opacity: 0%;
+        transition: opacity 0.3s ease;
+        
+        width: 30px; 
+        height: 40px; 
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .prev-img{
+        position: absolute;
+        transform: scaleX(-1);
+        width: 20px;
+        height: 20px;
+        left: 13px;
+        bottom: 55%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .prev {
+        position: absolute;
+        bottom: 53%;
+        left: 10px;
+        opacity: 0%;
+        transition: opacity 0.3s ease;
+        width: 30px; 
+        height: 40px;
+        cursor: pointer; 
+        z-index: 2;
+    }
+}    
+@media (max-width: 768px) {
+    .brand {
+        /* margin: 30px 9px; */
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: column;
+    }
+    
+    .brand-img {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        border:1px solid #ffffff; 
+        cursor: pointer;
+        
+        
+        
+    }
+    
+    .brand-text {
+        text-align: center;
+        word-break: keep-all;
+        position: relative;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #343434;
+    }
+    
+    .flex {
+        height: 170px;
+        display: flex;
+        margin: 30px 10px;
+       
+    }
+    
+    
+    
+    #back {
+        position: absolute;
+        outline: 1px solid black;
+        opacity: 0%;
+        transition: opacity 0.5s;
+        
+    }
+    
+    #back:hover {
+        opacity: 1;
+    }    
+    
+    .title {
+        display: flex;
+        position: relative;
+        color: #343434;
+        padding: 0 22px;
+    }
+    
+    .title-left {        
+        font-size: 16.5px;
+        font-weight: 550;
+        /* letter-spacing: -0.5px; */
+    }
+    
+    .title-right {
+        font-size: 13px;
+        display: flex;
+        margin-left: auto;        
+    }
+    
+    .body {
+        
+        overflow-x: hidden; 
+    }
+    
+   
+    
+    .big-main {
+        
+        width: 100%;
+
+    }
+
+    .main-img {
+        width: 0%;
+        
+    }
+    
+    
+    .main-text {        
+        width: 100%;
+        line-height: 1.62;
+        font-size: 13px;                
+        flex-direction: column;
+        color: #343434;
+        padding: 49px 34px 20px 21px;
+        
+    }
+    
+    .text-big {
+        font-size: 15px;
+        line-height: 1.38;
+        font-weight: 500;
+        margin-bottom: 19px;
+    }
+    
+    /* .sell {
+        width: calc((96%-60px)/5);
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    } */
+    
+    
+    
+    .sell-text {
+        margin-top:  20px;
+        color: #343434;
+        font-size: 13px;
+        margin-bottom: 100px;
+    }
+    
+    .sell-text1 {
+        display: flex;
+    }
+    
+    .sell-text2 {
+        font-weight: 700;
+        margin-right: 5%;
+    }
+    
+    .sell-text3 {
+        font-size: 20px;
+        float: right;
+        margin: -15px 5px;
+        cursor: pointer;
+    }
+
+    .sell-text3:hover {
+        content: "♥";
+        color: red;
+        font-size:0px;
+    }
+
+    .sell-text3:hover::after {
+        content: "♥";
+        color: red;
+        font-size:20px;
+    }
+
+
+    .sell-text3.clicked {
+        font-size: 0px;
+      }
+
+    .sell-text3.clicked::after {
+        content: "♥";
+        color: red;
+        font-size:20px;
+      }
+    
+    .sell-text4 {
+        margin-top: 8px;
+        font-weight:30px;
+    }
+    
+    .sell-text5 {
+        margin-top: 18px;
+        font-size: 11px;
+    
+    }
+    .sell-text5 span {
+        margin-top: 18px;
+        font-size: 11px;
+        color: rgba(181, 41, 41, 0.78);
+    }
+    
+    /* flexbox 
+    화면이 작아지면 container의 각 항목들이 아래로 내려가 배치된다.
+    */
+    
+    .wrap {
+        width: calc((100%-60px)/2);
+        position: relative;
+        padding: 0 1px
+        /* left: 22px; */
+        /* margin-right: 10px; */
+    }
+    
+    .model {
+        opacity: 0;
+    }
+    
+    
+    #container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 10px;
+        /* justify-content: center;    */
+        margin-bottom: 200px;
+    } 
+    
+    
+    .sell-img {
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    
+    * {
+        box-sizing: border-box;
+      }
+      
+
+      .carousel-flex {
+        display: flex;
+        margin-left: 22px;
+      }
+    
+      .carousel-wrapper {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+      
+    
+      .c-img {
+        width: 100%;
+        z-index: 0;
+      }
+    
+      .carousel-wrapper > .carousel {
+        display: flex;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.3s ease-out;
+      }
+      
+      .carousel-wrapper > .carousel > img {
+        width: 100%;
+        
+      }
+    
+    .button-left {
+        float: right;
+        
+        z-index: 1;
+        bottom: 50%;
+        margin-left: 10px;
+        
+       
+    }
+
+    .button-right {
+        float: left;
+        
+        z-index: 1;
+        bottom: 50%;
+        margin-left: 10px;
+    }
+
+    .next-img {
+        
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: 55%;
+        right: 13px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .next {
+        position: absolute;
+        bottom: 53%;
+        right: 10px;
+        opacity: 0%;
+        transition: opacity 0.3s ease;
+        
+        width: 30px; 
+        height: 40px; 
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .prev-img{
+        position: absolute;
+        transform: scaleX(-1);
+        width: 20px;
+        height: 20px;
+        left: 13px;
+        bottom: 55%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .prev {
+        position: absolute;
+        bottom: 53%;
+        left: 10px;
+        opacity: 0%;
+        transition: opacity 0.3s ease;
+        width: 30px; 
+        height: 40px;
+        cursor: pointer; 
+        z-index: 2;
+    }
+}    
+
+@media (max-width: 1025px) {
+    .brand {
+        /* width: 882px; */
+        /* margin: 0px auto; */
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: column;
+        position: relative;
+        padding: 0 5px;
+        right: 0;
+    }
+    
+    .brand-img {
+        width: 65px;
+        height: 65px;        
+        border-radius: 50%;
+        border:1px solid #ffffff; 
+        padding: 2px;
+        cursor: pointer;
+        
+            
+    }
+    
+    .brand-text {
+        
+        text-align: center;
+        word-break: keep-all;
+        position: relative;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #343434;
+    }
+    
+    .flex {
+        width: 100%;
+        margin: 30px auto;
+        position: relative;
+        /* height: 170px; */
+        display: flex;
+        padding: 16px 0;
+        /* justify-content: center; */
+        overflow: hidden;
+        top: 20px;
+        overflow: auto;
+        
+       
+    }
+
+    .flex::-webkit-scrollbar {
+        display: none;
+        
+    }
+
+
+    .prev-button {
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+
+    }
+
+    .brand-prev {
+        width: 25px;
+        height: 25px;        
+        position: absolute;
+        left: 2.5px;
+        top: 2.5px;
+        z-index: -1;
+        display: none;
+        
+    }
+
+    .brand-next {
+        width: 25px;
+        height: 25px;        
+        position: absolute;
+        left: 932.5px;
+        top: 2.5px;
+        transform: scaleX(-1);
+        z-index: -1;
+        display: none;
+        
+    }
+
+    .next-button {
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        float: right;
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+        
+
+    }
+
+    
+    #back {
+        position: absolute;
+        outline: 1px solid black;
+        opacity: 0%;
+        transition: opacity 0.5s;
+        z-index: 2;
+    }
+
+    #back1 {
+        position: absolute;
+        outline: 1px solid black;
+        opacity: 1;
+        transition: opacity 0.5s;
+        z-index: 2;
+    }
+    
+    #back:hover {
+        opacity: 1;
+    }    
+    
+    .title {
+        display: flex;
+        position: relative;
+        color: #343434;
+        padding:0 22px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .title-left {
+        
+        font-size: 16.5px;
+        font-weight: 550;
+        /* letter-spacing: -0.5px; */
+    }
+    
+    
+    .title-right {
+        text-align: right;
+        display: flex;
+        font-size: 13px;
+        margin-left: auto;
+
+        
+    }
+
+}

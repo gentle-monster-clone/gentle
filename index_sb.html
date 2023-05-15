@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_sb.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <div id="wrap">
+        <header>
+            <div class="popUp">
+                <div class="sliderBox">
+                    <ul>
+                        <button class="prev">&lt;</button>
+                        <li>
+                            <a href="#">선물하기 서비스를 통해 소중한 분에게 마음을 전하세요.</a>
+                        </li>
+                        <li>
+                            <a href="#">무료 배송/반품 서비스로 젠틀몬스터를 경험해보세요.</a>
+                        </li>
+                        <button class="next">&gt;</button>
+                    </ul>
+                </div>
+                <button class="icon">X</button>
+            </div>
+            <nav class="sticky">
+                <div class="logo">
+                    <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+                </div>
+                <ul class="menu">
+                    <li><a href="sub_s.html">선글라스</a></li>
+                    <li><a href="sub2">안경</a></li>
+                    <li><a href="sub3">콜라보레이션</a></li>
+                    <li><a href="sub4">스타일</a></li>
+                    <li><a href="sub5">브랜드이슈</a></li>
+                    <li><a href="sub6">매장보기</a></li>
+                    <li><a href="sub7">수리서비스</a></li>
+                </ul>
+                <div class="selfInfoBox">
+                    <div class="serch">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                    </div>
+                    <div class="selfBox">
+                        <div class="self">
+                            <button>Shop in KR</button>
+                        </div>
+                        <div class="self">
+                            <button>로그인</button>
+                        </div>
+                        <div class="self">
+                            <button>
+                                <img src="./images/basket.svg" alt="장바구니">
+                                <span>0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="flex">
+            <div class="brand">
+                <img src=images/all.webp alt=""class="brand-img"id="back">
+                <img src=images/all.webp alt=""class="brand-img">
+                    <p class="brand-text">전체보기</p>
+                </div>
+                <div class="brand">
+                    <img src=images/KUN.avif alt=""class="brand-img"id="back">
+                    <img src=images/KUN.avif alt=""class="brand-img">
+                        <p class="brand-text">KUN</p>
+                    </div><div class="brand">
+                        <img src=images/Margiela.avif alt=""class="brand-img"id="back1">
+                        <img src=images/Margiela.avif alt=""class="brand-img">
+                    <p class="brand-text">메종 마르지엘라</p>
+                </div>
+                <div class="brand">
+                    <img src=images/moncler.webp alt=""class="brand-img"id="back">
+                    <img src=images/moncler.webp alt=""class="brand-img">
+                    <p class="brand-text">몽클레르</p>
+                </div>
+                <div class="brand">
+                    <img src=images/HBA.webp alt=""class="brand-img"id="back">
+                    <img src=images/HBA.webp alt=""class="brand-img">
+                    <p class="brand-text">HBA</p>
+                </div>
+                <div class="brand">
+                    <img src="images/Garden.webp" alt=""class="brand-img"id="back">
+                    <img src="images/Garden.webp" alt=""class="brand-img">
+                    <p class="brand-text">젠틀 가든</p>
+                </div>
+                <div class="brand">
+                    <img src=images/Coperni.webp alt=""class="brand-img"id="back">
+                    <img src=images/Coperni.webp alt=""class="brand-img">
+                    <p class="brand-text">코페르니</p>
+                </div>
+                <div class="brand">
+                    <img src="images/YK Jeong.jpeg" alt=""class="brand-img"id="back">
+                    <img src="images/YK Jeong.jpeg" alt=""class="brand-img">
+                    <p class="brand-text">YK Jeong</p>
+                </div>
+                <div class="brand">
+                    <img src="images/Heron Preston.jpeg"alt=""class="brand-img"id="back">
+                    <img src="images/Heron Preston.jpeg"alt=""class="brand-img">
+                    <p class="brand-text">헤론 프레스톤</p>
+                </div>
+                <div class="brand">
+                    <img src="images/AMBUSH_1.webp" alt=""class="brand-img"id="back">
+                    <img src="images/AMBUSH_1.webp" alt=""class="brand-img">
+                    <p class="brand-text">엠부쉬</p>
+                </div>
+                <div class="brand">
+                    <img src=images/Wow.webp alt=""class="brand-img"id="back">
+                    <img src=images/Wow.webp alt=""class="brand-img">
+                    <p class="brand-text">월드 오브 워크래프트</p>
+                </div>
+                <div class="brand">
+                    <img src="images/Marine Serre.webp" alt=""class="brand-img"id="back">
+                    <img src="images/Marine Serre.webp" alt=""class="brand-img">
+                    <p class="brand-text">마린 세르</p>
+                </div>
+                <div class="brand">
+                    <img src="images/Shangguan Zhe.webp" alt=""class="brand-img"id="back">
+                    <img src="images/Shangguan Zhe.webp" alt=""class="brand-img">
+                    <p class="brand-text">산쿠안즈</p>
+                </div>
+                <div class="brand">
+                    <img src="images/Jennie.webp" alt=""class="brand-img"id="back">
+                    <img src="images/Jennie.webp" alt=""class="brand-img">
+                    <p class="brand-text">제니</p>
+                </div>
+                <div class="brand">
+                    <img src="images/Alexander Wang.webp" alt=""class="brand-img"id="back">
+                    <img src="images/Alexander Wang.webp" alt=""class="brand-img">
+                    <p class="brand-text">알렉산더 왕</p>
+                </div>
+                <div class="brand">
+                    <img src="images/AMBUSH_2.webp" alt=""class="brand-img"id="back">
+                    <img src="images/AMBUSH_2.webp" alt=""class="brand-img">
+                    <p class="brand-text">엠부쉬</p>
+                </div>
+                <div class="brand">
+                    <img src="images/Diplo.webp" alt=""class="brand-img"id="back">
+                    <img src="images/Diplo.webp" alt=""class="brand-img">
+                    <p class="brand-text">디플로</p>
+                </div>
+                <div class="brand">
+                    <img src="images/Henrik Vibskov.webp" alt=""class="brand-img"id="back">
+                    <img src="images/Henrik Vibskov.webp" alt=""class="brand-img">
+                    <p class="brand-text">헨릭 빕스코브</p>
+                </div>
+        </div>
+            <div class="brand-carousel">
+                <button class="prev-button">이전</button>
+                <img src="images/brand_button.png" alt="" class="brand-prev">
+                <button class="next-button">다음</button>
+                <img src="images/brand_button.png" alt="" class="brand-next">                
+            </div>
+
+                <div class="title">
+                    <p class="title-left">콜라보레이션 / 메종 마르지엘라 (37)</p>
+                    <div class="title-right">
+                        <p class="title-right-1">간략보기</p>
+                        <p class="title-right-1">필터</p>
+                    </div>        
+                </div>                   
+        <div class="main">
+            <img src="images/margiela_main.avif" alt="" class="main-img">
+            <img src="images/Bigmain.avif" alt="" class="big-main">
+            <div class="main-text">
+                <p class="text-big">메종 마르지엘라 ✕ 젠틀몬스터</p>
+                <p>젠틀몬스터와 메종 마르지엘라의 협업 컬렉션을 소개합니다. 젠틀몬스터의 디자인 DNA가 담긴 프레임에 실제 실로 구현한 메종 마르지엘라의 4개의 화이트 스티치가 놓아져, 두 브랜드의 패션에 대한 타협하지 않는 창의성, 진정성 그리고 자기표현의 가치를 담았습니다.</p>    
+            </div>
+        </div>
+        
+        
+        <div>
+            
+        </div>    
+            <div id="container">
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell1_1.avif" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                          
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                        
+                    </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell2_1.avif" alt="" class="sell-img">
+                          <img src="images/sell2_2.avif" alt="" class="sell-img">
+                          <img src="images/sell2_3.avif" alt="" class="sell-img">
+                          <img src="images/sell2_4.avif" alt="" class="sell-img">
+                          <img src="images/sell2_5.avif" alt="" class="sell-img">
+                          <img src="images/sell2_6.avif" alt="" class="sell-img">
+                          <img src="images/sell2_7.avif" alt="" class="sell-img">
+                          <img src="images/sell2_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button" >prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                         
+                    </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell3_1.avif" alt="" class="sell-img">
+                          <img src="images/sell3_2.avif" alt="" class="sell-img">
+                          <img src="images/sell3_3.avif" alt="" class="sell-img">
+                          <img src="images/sell3_4.avif" alt="" class="sell-img">
+                          <img src="images/sell3_5.avif" alt="" class="sell-img">
+                          <img src="images/sell3_6.avif" alt="" class="sell-img">
+                          <img src="images/sell3_7.avif" alt="" class="sell-img">                          
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                      
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell4_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell4_2.avif" alt="" class="sell-img">
+                          <img src="images/sell4_3.avif" alt="" class="sell-img">
+                          <img src="images/sell4_4.avif" alt="" class="sell-img">
+                          <img src="images/sell4_5.avif" alt="" class="sell-img">
+                          <img src="images/sell4_6.avif" alt="" class="sell-img">
+                          <img src="images/sell4_7.avif" alt="" class="sell-img">
+                          <img src="images/sell4_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                         
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell5_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell5_2.avif" alt="" class="sell-img">
+                          <img src="images/sell5_3.avif" alt="" class="sell-img">
+                          <img src="images/sell5_4.avif" alt="" class="sell-img">
+                          <img src="images/sell5_5.avif" alt="" class="sell-img">                        
+                        </div>
+                       <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                        
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell6_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell6_2.avif" alt="" class="sell-img">
+                          <img src="images/sell6_3.avif" alt="" class="sell-img">
+                          <img src="images/sell6_4.avif" alt="" class="sell-img">
+                          <img src="images/sell6_5.avif" alt="" class="sell-img">                        
+                          <img src="" alt="" class="sell-img">
+                          <img src="" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                        
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel" >
+                          <img src="images/sell_Model1.avif" alt="" class="sell-img">                        
+                        </div>
+                        <!-- <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                          -->
+                      </div>
+                    <div class="sell-text model">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell7_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                       
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell8_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                        
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell9_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                         
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell10_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                         
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell11_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                        
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell12_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                        
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell13_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                         
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell14_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <div class="button-right">
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        </div>                        
+                    </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell15_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                          
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        <div class="button-right">
+                        
+                        </div>                         
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell16_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                          
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        <div class="button-right">
+                        
+                        </div>                         
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell_model2.avif" alt="" class="sell-img">                        
+                        </div>                                               
+                      </div>
+                    <div class="sell-text model">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell16_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                          
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        <div class="button-right">
+                        
+                        </div>                         
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                          <img src="images/sell17_1.jpeg" alt="" class="sell-img">
+                          <img src="images/sell1_2.avif" alt="" class="sell-img">
+                          <img src="images/sell1_3.avif" alt="" class="sell-img">
+                          <img src="images/sell1_4.avif" alt="" class="sell-img">
+                          <img src="images/sell1_5.avif" alt="" class="sell-img">
+                          <img src="images/sell1_6.avif" alt="" class="sell-img">
+                          <img src="images/sell1_7.avif" alt="" class="sell-img">
+                          <img src="images/sell1_8.avif" alt="" class="sell-img">
+                          
+                        </div>
+                        <div class="button-left">
+                        <button class="prev" type="button">prev</button>
+                        <img src="images/>.png" alt="" class="prev-img">
+                        </div>
+                        <button class="next" type="button">next</button>
+                        <img src="images/>.png" alt="" class="next-img">
+                        <div class="button-right">
+                        
+                        </div>                         
+                      </div>
+                    <div class="sell-text">
+                        <p class="sell-text2">메종 마르지엘라 - MM003 W2</p>
+                        <p class="sell-text3">♡</p>
+                        <p class="sell-text4">재입고 예정</p>
+                        <div class="sell-text5">+<span>4</span> Colors</div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footerInfoLayer">
+                    <ul>
+                        <li>
+                            <span>고객 서비스</span>
+                            <ul>
+                                <li><a href="">문의</a></li>
+                                <li><a href="">배송</a></li>
+                                <li><a href="">서비스</a></li>
+                                <li><a href="">교환 및 반품</a></li>
+                                <li><a href="">주문조회</a></li>
+                                <li><a href="">주문취소</a></li>
+                                <li><a href="">매장 픽업 서비스</a></li>
+                                <li><a href="">수리서비스 가이드</a></li>
+                                <li><a href="">제품 사용 가이드</a></li>
+                                <li><a href="">정품 인증</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><span>법적 고지</span>
+                            <ul>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">이용약관</a></li>
+                                <li><a href="">개인정보처리방침</a></li>
+                                <li><a href="">쿠키정책</a></li>
+                                <li><a href="">기프트카드 이용약관</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><span>소셜 미디어</span>
+                            <ul>
+                                <li><a href="">페이스북</a></li>
+                                <li><a href="">인스타그램</a></li>
+                                <li><a href="">유튜브</a></li>
+                                <li><a href="">트위터</a></li>
+                                <li><a href="">카카오톡</a></li>
+                                <li><a href="">핀터레스트</a></li>
+                                <li><a href="">위쳇</a></li>
+                                <li><a href="">웨이보</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="copyRight">
+                    <span>&copy; 2023 GENTLE MONSTER</span>
+                    <div class="infoBox">
+                        <span>주) 아이아이컴바인드</span>
+                        <span>대표자명: 김한국</span>
+                        <span>사업자번호: 119-86-38589</span>
+                        <span>통신판매신고번호: 제 2014-서울마포-1050 호 (사업자 정보 확인)</span>
+                        <span>이메일 문의: cs@gentlemonster.com</span>
+                        <span>개인정보보호책임자: 정태호</span>
+                        <span>주소: 서울특별시 마포구 어울마당로5길 41</span>
+                        <span>대표번호: <a href="">1600-2126</a></span>
+                        <p>
+                            고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다.
+                            <a href="">서비스 가입사실 확인</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            
+            
+            
+    
+    <script src="index_sb.js"></script>
+</body>
+
+</html>
